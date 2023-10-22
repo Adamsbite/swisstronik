@@ -4,7 +4,7 @@ async function main() {
   const initialData = "Swisstronik";
   const storage = await ethers.deployContract("Storage", [initialData]);
   storage.waitForDeployment();
-
+ 
   console.log(`Storage with default data ${initialData} deployed to ${storage.target}`);
   // 0x6e73e8D0625D563E0c43a41d65FA8B79AE284d36
 
